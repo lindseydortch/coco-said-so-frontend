@@ -12,17 +12,18 @@ If the user clicks into Agency Tracking:
   - They will be able to CRUD: 
     - Name of the agency 
     - Location 
+    - Agency Instagram Handle
     - Instagram Followers 
     - Digital Requirements 
     - Submitted digitals too? 
 If the user clicks into Photogropher List / Tracking 
   - They will be able to CRUD: 
     - Photographer name 
+    - Photogropher location
     - Photographer Instagram Handle 
     - Mutual Model Connections 
     - Agencies they work with 
     - Outreach 
-    - Follow up 
 If the user clicks into Modeling Goals 
   - They will be able to CRUD: 
     - Goals 
@@ -72,13 +73,13 @@ If the user clicks into Modeling Goals
 ### Backend Models Setup 
 - Registration 
 - Login  
-- Agency Tracking 
-- Photogropher List/ Tracking 
-- Modeling goals
+✅ Agency Tracking 
+✅ Photogropher List/ Tracking 
+✅ Modeling goals
 
 ### Backend Routes Setup 
 - Registration 
 - Login   
-- Agency Tracking 
-- Photogropher List/ Tracking 
-- Modeling goals
+✅ Agency Tracking 
+✅ Photogropher List/ Tracking 
+✅ Modeling goals
