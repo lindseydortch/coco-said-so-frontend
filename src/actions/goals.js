@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { tokenConfig } from './auth'
 
 import {
   GET_GOALS,
@@ -8,8 +9,8 @@ import {
 } from './types'
 
 // GET 
-export const getGoals = () => dispatch => {
-  axios.get('http://localhost:8000/goals/')
+export const getGoals = () => (dispatch, getState) => {
+  axios.get('http://localhost:8000/goals/', tokenConfig(getState))
   .then(res => {
     dispatch({
       type: GET_GOALS,
@@ -20,8 +21,8 @@ export const getGoals = () => dispatch => {
 }
 
 // DELETE 
-export const deleteGoal = (id) => dispatch => {
-  axios.delete(`http://localhost:8000/goals/${id}/`)
+export const deleteGoal = (id) => (dispatch, getState) => {
+  axios.delete(`http://localhost:8000/goals/${id}/`, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: DELETE_GOAL,
@@ -32,8 +33,8 @@ export const deleteGoal = (id) => dispatch => {
 }
 
 // ADD 
-export const addGoal = (goal) => dispatch => {
-  axios.post('http://localhost:8000/goals/', goal)
+export const addGoal = (goal) => (dispatch, getState) => {
+  axios.post('http://localhost:8000/goals/', goal, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: ADD_GOAL,

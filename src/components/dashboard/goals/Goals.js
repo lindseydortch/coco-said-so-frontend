@@ -24,6 +24,7 @@ export class Goals extends Component {
               <p>{goal.goal}</p>
               <p>{goal.date_date}</p>
               <p>{goal.tasks_to_complete_goal}</p>
+              <button onClick={this.props.deleteGoal.bind(this, goal.id)}>Goal Achieved!</button>
             </div>
           ))
         }

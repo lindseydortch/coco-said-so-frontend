@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { tokenConfig } from './auth' 
 
 import {
   GET_AGENCIES,
@@ -8,8 +9,8 @@ import {
 } from './types'
 
 // GET 
-export const getAgencies = () => dispatch => {
-  axios.get('http://localhost:8000/agency/')
+export const getAgencies = () => (dispatch, getState) => {
+  axios.get('http://localhost:8000/agency/', tokenConfig(getState))
   .then(res => {
     dispatch({
       type: GET_AGENCIES,
@@ -20,8 +21,8 @@ export const getAgencies = () => dispatch => {
 }
 
 // DELETE 
-export const deleteAgency = (id) => dispatch => {
-  axios.delete(`http://localhost:8000/agency/${id}/`)
+export const deleteAgency = (id) => (dispatch, getState) => {
+  axios.delete(`http://localhost:8000/agency/${id}/`, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: DELETE_AGENCY,
@@ -32,8 +33,8 @@ export const deleteAgency = (id) => dispatch => {
 }
 
 // ADD 
-export const addAgency = (agency) => dispatch => {
-  axios.post('http://localhost:8000/agency/', agency)
+export const addAgency = (agency) => (dispatch, getState) => {
+  axios.post('http://localhost:8000/agency/', agency, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: ADD_AGENCY,
