@@ -30,6 +30,7 @@ export class Agencies extends Component {
               <p>{agency.outreach}</p>
               <p>{agency.date_digitals_submitted}</p>
               <p>{agency.notes}</p>
+              <button onClick={this.props.deleteAgency.bind(this, agency.id)}>Delete Agency</button>
             </div>
           ))
         }

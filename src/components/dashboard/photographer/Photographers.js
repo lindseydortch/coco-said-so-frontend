@@ -30,6 +30,7 @@ export class Photographers extends Component {
               <p>{photographer.outreach_date}</p>
               <p>{photographer.agencies_work_with}</p>
               <p>{photographer.notes}</p>
+              <button onClick={this.props.deletePhotographer.bind(this, photographer.id)}>Delete Photographer</button>
             </div>
           ))
         }

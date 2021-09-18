@@ -39,24 +39,23 @@ If the user clicks into Modeling Goals
   - Modeling goals
 
 ### Frontend Components Setup 
-- Registration 
-- Login  
-- Dashboard 
+✅ Registration 
+✅ Login  
+✅ Dashboard 
   ✅ Agency Tracking 
   ✅ Photogropher List/ Tracking 
   ✅ Modeling goals
 
 ### Frontend CRD  
-- Registration 
-- Login  
-- Dashboard 
+✅ Registration 
+✅ Login  
+✅ Dashboard 
   ✅ Agency Tracking 
   ✅ Photogropher List/ Tracking 
   ✅ Modeling goals
 
 ### Frontend U 
-- Registration 
-- Login  
+- Registration  
 - Dashboard 
   - Agency Tracking 
   - Photogropher List/ Tracking 
@@ -71,23 +70,23 @@ If the user clicks into Modeling Goals
   - Modeling goals
 
 ## Backend Models and Routes 
-- Registration 
-- Login  
-- Dashboard - Doesn't need model, just needs a frontend route 
-  - Agency Tracking 
-  - Photogropher List/ Tracking 
-  - Modeling goals
+✅ Registration 
+✅ Login  
+✅ Dashboard - Doesn't need model, just needs a frontend route 
+  ✅ Agency Tracking 
+  ✅ Photogropher List/ Tracking 
+  ✅ Modeling goals
 
 ### Backend Models Setup 
-- Registration 
-- Login  
+✅ Registration 
+✅ Login  
 ✅ Agency Tracking 
 ✅ Photogropher List/ Tracking 
 ✅ Modeling goals
 
 ### Backend Routes Setup 
-- Registration 
-- Login   
+✅ Registration 
+✅ Login   
 ✅ Agency Tracking 
 ✅ Photogropher List/ Tracking 
 ✅ Modeling goals

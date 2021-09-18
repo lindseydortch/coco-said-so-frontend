@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { tokenConfig } from './auth'
 
 import {
   GET_PHOTOGRAPHERS,
@@ -8,8 +9,8 @@ import {
 } from './types'
 
 // GET 
-export const getPhotographers = () => dispatch => {
-  axios.get('http://localhost:8000/photographers/')
+export const getPhotographers = () => (dispatch, getState) => {
+  axios.get('http://localhost:8000/photographers/', tokenConfig(getState))
   .then(res => {
     dispatch({
       type: GET_PHOTOGRAPHERS,
@@ -20,8 +21,8 @@ export const getPhotographers = () => dispatch => {
 }
 
 // DELETE 
-export const deletePhotographer = (id) => dispatch => {
-  axios.delete(`http://localhost:8000/photographers/${id}/`)
+export const deletePhotographer = (id) => (dispatch, getState) => {
+  axios.delete(`http://localhost:8000/photographers/${id}/`, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: DELETE_PHOTOGRAPHER,
@@ -32,8 +33,8 @@ export const deletePhotographer = (id) => dispatch => {
 }
 
 // ADD 
-export const addPhotographer = (photographer) => dispatch => {
-  axios.post('http://localhost:8000/photographers/', photographer)
+export const addPhotographer = (photographer) => (dispatch, getState) => {
+  axios.post('http://localhost:8000/photographers/', photographer, tokenConfig(getState))
   .then(res => {
     dispatch({
       type: ADD_PHOTOGRAPHER,
