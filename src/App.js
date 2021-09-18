@@ -1,6 +1,10 @@
-import './App.css';
-import ReactDOM from 'react-dom';
-import { Router } from 'react-router';
+import './App.css'
+import { Component } from 'react'
+import ReactDOM from 'react-dom'
+import { Router } from 'react-router'
+import { Provider } from 'react-redux'
+
+import store from './store'
 
 // ==============================================
 // BRING IN COMPOENENTS 
@@ -14,8 +18,10 @@ import Dashboard from './components/dashboard/Dashboard'
 const App = () => {
   return (
     <div>
-      <Header/>
-      <Dashboard />
+      <Provider store={store}>
+        <Header/>
+        <Dashboard />
+      </Provider>
     </div>
   )
 }

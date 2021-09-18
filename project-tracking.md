@@ -42,11 +42,19 @@ If the user clicks into Modeling Goals
 - Registration 
 - Login  
 - Dashboard 
-  - Agency Tracking 
-  - Photogropher List/ Tracking 
-  - Modeling goals
+  ✅ Agency Tracking 
+  ✅ Photogropher List/ Tracking 
+  ✅ Modeling goals
 
-### Frontend CRUD  
+### Frontend CRD  
+- Registration 
+- Login  
+- Dashboard 
+  ✅ Agency Tracking 
+  ✅ Photogropher List/ Tracking 
+  ✅ Modeling goals
+
+### Frontend U 
 - Registration 
 - Login  
 - Dashboard 
