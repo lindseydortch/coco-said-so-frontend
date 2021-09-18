@@ -29,10 +29,11 @@ export class Login extends Component {
 
     const { username,password } = this.state
     return (
-      <div className="col-md-6 m-auto">
-        <div className="card card-body mt-5">
-          <h2 className="text-center">Login</h2>
-          <form onSubmit={this.onSubmit}>
+      <section className="login_section">
+
+      
+          <h2>Login</h2>
+          <form onSubmit={this.onSubmit} className="form form-background-orange">
             <div className="form-group">
               <label>Username</label>
               <input
@@ -56,7 +57,7 @@ export class Login extends Component {
             </div>
 
             <div className="form-group">
-              <button type="submit" className="btn btn-primary">
+              <button type="submit" className="btn btn-mg-small btn-yellow-light">
                 Login
               </button>
             </div>
@@ -64,8 +65,7 @@ export class Login extends Component {
               Don't have an account? <Link to="/register">Register</Link>
             </p>
           </form>
-        </div>
-      </div>
+          </section>
     )
   }
 }

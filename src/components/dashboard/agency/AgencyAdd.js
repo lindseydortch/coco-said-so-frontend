@@ -45,7 +45,7 @@ export class AgencyAdd extends Component {
     return (
       <section className="agency-add">
         <h2>Add An Agency</h2>
-        <form className="form" onSubmit={this.onSubmit}>
+        <form className="form form-background-orange" onSubmit={this.onSubmit}>
           <div className="form-group">
             <label htmlFor="agency_name">Agency Name</label>
             <input type="text" name="agency_name" onChange={this.onChange} value={agency_name} />
@@ -93,7 +93,7 @@ export class AgencyAdd extends Component {
             <textarea name="notes" cols="30" rows="10" onChange={this.onChange} value={notes}></textarea>
           </div>
           <div className="form-group">
-            <button type="submit">
+            <button type="submit" className="btn btn-yellow-light btn-mg-small">
               Add Agency
             </button>
           </div>

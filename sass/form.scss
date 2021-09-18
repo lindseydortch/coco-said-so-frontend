@@ -1,0 +1,29 @@
+.form {
+  width: 80%;
+  margin: 0 auto;
+
+  &-background-orange {
+    background-color: $orange;
+    padding: 4rem;
+    color: white;
+    border-radius: .5rem;
+  }
+
+  & label {
+    font-size: 1.6rem;
+  }
+
+  & input,
+  select,
+  textarea {
+    margin: .5rem 0;
+    display: block;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: none;
+    color: $orange;
+    font-size: 1.6rem;
+  }
+
+}

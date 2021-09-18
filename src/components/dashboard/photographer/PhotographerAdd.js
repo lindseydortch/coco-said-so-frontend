@@ -45,7 +45,7 @@ export class PhotographerAdd extends Component {
     return (
       <section className="photographer-add">
         <h2>Add A Photographer</h2>
-        <form className="form" onSubmit={this.onSubmit}>
+        <form className="form form-background-orange" onSubmit={this.onSubmit}>
           <div className="form-group">
             <label htmlFor="photographer_name">Photographer Name</label>
             <input type="text" name="photographer_name" onChange={this.onChange} value={photographer_name} />
@@ -88,7 +88,7 @@ export class PhotographerAdd extends Component {
             <textarea name="notes" cols="30" rows="10" onChange={this.onChange} value={notes}></textarea>
           </div>
           <div className="form-group">
-            <button type="submit">
+            <button type="submit" className="btn btn-yellow-light btn-mg-small">
               Add Photographer
             </button>
           </div>

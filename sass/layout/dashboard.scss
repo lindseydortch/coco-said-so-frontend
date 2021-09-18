@@ -1,0 +1,49 @@
+.dashboard {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow-dark;
+  color: $pink;
+
+  & h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: $pink;
+  }
+
+  & .links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & .link_container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin: 2rem;
+
+    & a {
+      font-size: 2rem;
+      background-color: $pink;
+      text-align: center;
+      padding: 2rem;
+      color: #fff;
+    }
+
+    & p {
+      margin-top: 1.5rem;
+    }
+
+    & img {
+      width: 100%;
+      height: 40rem;
+      object-fit: cover;
+      object-position: center;
+      border-radius: .5rem;
+    }
+  }
+}

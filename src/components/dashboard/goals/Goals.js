@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { getGoals, deleteGoal } from '../../../actions/goals'
+import GoalsAdd from './GoalsAdd'
 
 export class Goals extends Component {
   static propTypes = {
@@ -24,10 +25,11 @@ export class Goals extends Component {
               <p>{goal.goal}</p>
               <p>{goal.date_date}</p>
               <p>{goal.tasks_to_complete_goal}</p>
-              <button onClick={this.props.deleteGoal.bind(this, goal.id)}>Goal Achieved!</button>
+              <button onClick={this.props.deleteGoal.bind(this, goal.id)} className="btn btn-mg-small btn-orange">Goal Achieved!</button>
             </div>
           ))
         }
+        <GoalsAdd />
       </section>
     )
   }

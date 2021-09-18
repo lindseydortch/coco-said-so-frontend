@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+}
+.form-background-orange {
+  background-color: #ff9770;
+  padding: 4rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+.form label {
+  font-size: 1.6rem;
+}
+.form input,
+.form select,
+.form textarea {
+  margin: 0.5rem 0;
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  color: #ff9770;
+  font-size: 1.6rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.btn-mg-small {
+  margin: 1.5rem 0;
+}
+.btn-yellow-light {
+  background-color: #e9ff70;
+  color: #ff9770;
+}
+.btn-orange {
+  background-color: #ff9770;
+  color: #e9ff70;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff9770;
+}
+.header .logobar {
+  font-size: 2.2rem;
+  font-family: "Raleway Dots", cursive;
+  color: #fff;
+}
+.header .nav_list {
+  display: flex;
+  list-style: none;
+}
+.header .nav_item {
+  color: #e9ff70;
+  font-size: 1.8rem;
+  transition: 0.3s color ease-in;
+}
+.header .nav_item:not(:last-child) {
+  margin-right: 4rem;
+}
+.header .nav_link:link, .header .nav_link:visited {
+  color: inherit;
+}
+.header .nav_link:hover, .header .nav_link:active {
+  color: #fff;
+}
+
+.dashboard {
+  padding: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #ffd670;
+  color: #ff70a6;
+}
+.dashboard h1 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #ff70a6;
+}
+.dashboard .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dashboard .link_container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 2rem;
+}
+.dashboard .link_container a {
+  font-size: 2rem;
+  background-color: #ff70a6;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+.dashboard .link_container p {
+  margin-top: 1.5rem;
+}
+.dashboard .link_container img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.show-agencies,
+.show-photographers,
+.show-goals {
+  background-color: #ff70a6;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.show-agencies h2,
+.show-photographers h2,
+.show-goals h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #e9ff70;
+  text-align: center;
+}
+.show-agencies .cards,
+.show-photographers .cards,
+.show-goals .cards {
+  width: 100%;
+}
+.show-agencies .card,
+.show-photographers .card,
+.show-goals .card {
+  margin: 4rem;
+  display: block;
+  background-color: #e9ff70;
+  border-radius: 0.5rem;
+  padding: 4rem;
+}
+.show-agencies .card p,
+.show-photographers .card p,
+.show-goals .card p {
+  font-size: 1.6rem;
+  color: #ff70a6;
+  font-weight: bold;
+  margin: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register_section,
+.login_section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ff70;
 }
+.register_section h2,
+.login_section h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #ff9770;
+}
+.register_section p,
+.login_section p {
+  font-size: 1.4rem;
+}
+.register_section p a,
+.login_section p a {
+  color: #e9ff70;
+}
+
+/*# sourceMappingURL=App.css.map */

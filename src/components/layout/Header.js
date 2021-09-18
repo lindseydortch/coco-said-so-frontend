@@ -11,45 +11,49 @@ export class Header extends Component {
   }
 
   render() {
-    const { isAuthenticated, user} = this.props.auth
+    const { isAuthenticated } = this.props.auth
 
     const authLinks = (
-      <ul> 
-        <span>
-          <strong>
-            { user ? `Welcome ${user.username}` : `` }
-          </strong>
-        </span>
-        <li>
-          <button onClick={this.props.logout}>
+      <nav className="nav">
+      <ul className="nav_list">
+        <li className="nav_item">
+          <Link onClick={this.props.logout} to="/login" className="nav_link">
             Logout
-          </button>
+          </Link>
         </li>
       </ul>
+    </nav>
+
     );
 
     const guestLinks = (
-      <ul>
-        <li>
-          <Link to="/register">
-            Register
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/login">
-            Login
-          </Link>
-        </li>
-      </ul>
+      <nav className="nav">
+        <ul className="nav_list">
+          <li className="nav_item">
+            <Link to="/register" className="nav_link">
+              Register
+            </Link>
+          </li>
+          <li className="nav_item">
+            <Link to="/login" className="nav_link">
+              Login
+            </Link>
+          </li>
+        </ul>
+      </nav>
     );
 
     return (
-      <div>
-        HEADER
+      <header className="header">
+        <div className="logobar">
+          <h1>
+            COCO SAID SO
+          </h1>
+        </div>
         <div>
             {isAuthenticated ? authLinks : guestLinks}
         </div>
-      </div>
+      </header>
     )
   }
 }

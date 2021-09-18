@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $orange;
+
+  & .logobar {
+    font-size: 2.2rem;
+    font-family: $logo-font;
+    color: #fff;
+  }
+
+  & .nav {
+
+    &_list {
+      display: flex;
+      list-style: none;
+    }
+
+    &_item {
+      color: $yellow-light;
+      font-size: 1.8rem;
+      transition: .3s color ease-in;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    &_link:link,
+    &_link:visited {
+      color: inherit;
+    }
+
+    &_link:hover,
+    &_link:active {
+      color: #fff;
+    }
+  }
+}

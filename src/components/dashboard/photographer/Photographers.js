@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { getPhotographers, deletePhotographer } from '../../../actions/photographers'
+import PhotographerAdd from './PhotographerAdd'
 
 export class Photographers extends Component {
   static propTypes = {
@@ -21,19 +22,20 @@ export class Photographers extends Component {
         {
           this.props.photographers.map(photographer => (
             <div className="card" key={photographer.id}>
-              <p>{photographer.photographer_name}</p>
-              <p>{photographer.photographer_location}</p>
-              <p>{photographer.photographer_instagram_handle}</p>
-              <p>{photographer.insta_followers}</p>
-              <p>{photographer.mutual_models}</p>
-              <p>{photographer.outreach}</p>
-              <p>{photographer.outreach_date}</p>
-              <p>{photographer.agencies_work_with}</p>
-              <p>{photographer.notes}</p>
-              <button onClick={this.props.deletePhotographer.bind(this, photographer.id)}>Delete Photographer</button>
+              <p>Photographer Name: {photographer.photographer_name}</p>
+              <p>Photographer Location: {photographer.photographer_location}</p>
+              <p>Photographer Instagram Handle: {photographer.photographer_instagram_handle}</p>
+              <p>Insta Followers: {photographer.insta_followers}</p>
+              <p>Mutual Models: {photographer.mutual_models}</p>
+              <p>Outreach: {photographer.outreach}</p>
+              <p>Outreach Date: {photographer.outreach_date}</p>
+              <p>Agencies Work With: {photographer.agencies_work_with}</p>
+              <p>Notes: {photographer.notes}</p>
+              <button onClick={this.props.deletePhotographer.bind(this, photographer.id)} className="btn btn-orange btn-mg-small">Delete Photographer</button>
             </div>
           ))
         }
+        <PhotographerAdd />
       </section>
     )
   }

@@ -1,0 +1,37 @@
+.show-agencies,
+.show-photographers,
+.show-goals {
+  background-color: $pink;
+  padding: 4rem;
+  // min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & h2 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: $yellow-light;
+    text-align: center;
+  }
+
+  & .cards {
+    width: 100%;
+  }
+
+  .card {
+    margin: 4rem;
+    display: block;
+    background-color: $yellow-light;
+    border-radius: .5rem;
+    padding: 4rem;
+
+    & p {
+      font-size: 1.6rem;
+      color: $pink;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+  }
+ 
+}

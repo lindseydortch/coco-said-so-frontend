@@ -1,0 +1,40 @@
+// ===========================================================
+// VARIABLES 
+// ===========================================================
+
+// FONTS 
+$logo-font: 'Raleway Dots', cursive;
+$display-font: 'Raleway', sans-serif;
+
+// COLORS 
+$turqoise: #70D6ff;
+$pink: #ff70a6;
+$orange: #ff9770;
+$yellow-dark: #ffd670;
+$yellow-light: #e9ff70;
+
+// ===========================================================
+// BASIC STYLING
+// ===========================================================
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $display-font;
+  letter-spacing: .2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

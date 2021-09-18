@@ -1,0 +1,23 @@
+.register_section,
+.login_section {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow-light;
+
+  & h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: $orange;
+  }
+
+  & p {
+    font-size: 1.4rem;
+
+    & a {
+      color: $yellow-light;
+    }
+  }
+}

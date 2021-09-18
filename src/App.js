@@ -20,6 +20,9 @@ import Register from './components/accounts/Register'
 
 // DASHBOARD 
 import Dashboard from './components/dashboard/Dashboard'
+import Agencies from './components/dashboard/agency/Agencies'
+import Photographers from './components/dashboard/photographer/Photographers'
+import Goals from './components/dashboard/goals/Goals'
 
 class App extends Component{
   componentDidMount() {
@@ -34,6 +37,9 @@ class App extends Component{
           <Fragment>
             <Header/>
             <PrivateRoute exact path='/' component={Dashboard} />
+            <PrivateRoute exact path='/agencies' component={Agencies} />
+            <PrivateRoute exact path='/photographers' component={Photographers} />
+            <PrivateRoute exact path='/goals' component={Goals} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
           </Fragment>

@@ -33,7 +33,7 @@ export class GoalsAdd extends Component {
     return (
       <section className="goal-add">
         <h2>Add A Goal</h2>
-        <form className="form" onSubmit={this.onSubmit}>
+        <form className="form form-background-orange" onSubmit={this.onSubmit}>
           <div className="form-group">
             <label htmlFor="goal">Goal</label>
             <input type="text" name="goal" onChange={this.onChange} value={goal} />
@@ -47,7 +47,7 @@ export class GoalsAdd extends Component {
             <input type="text" name="tasks_to_complete_goal" onChange={this.onChange} value={tasks_to_complete_goal} />
           </div>
           <div className="form-group">
-            <button type="submit">
+            <button type="submit" className="btn btn-yellow-light btn-mg-small">
               Add Goal
             </button>
           </div>
